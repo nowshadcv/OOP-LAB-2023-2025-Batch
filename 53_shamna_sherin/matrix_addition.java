@@ -46,7 +46,7 @@ public class matrix_addition {
 			}
 		}
 			else{
-				System.out.println("The sum of matrix:");	
+				System.out.println("This matrix cannot be added");	
 			}
 		
 	}
