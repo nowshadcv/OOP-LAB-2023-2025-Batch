@@ -1,4 +1,4 @@
-package project1;
+package complexnumber;
 import java.util.Scanner ;
 public class SymmetricMatrix {
 
