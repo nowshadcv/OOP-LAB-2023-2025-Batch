@@ -8,13 +8,13 @@ class CPU {
 		double cores;
 		String manufacturer;
 		double getCache () {
-			return 4.3;}}
+			return 2.3;}}
 
 	static class RAM{
 		double memory;
 		String manufacturer;
 		double getClockSpeed() {
-			return 5.5 ;}}}
+			return 4.5 ;}}}
 
 public class CPUDetails {
 	public static void main(String[] args) {
