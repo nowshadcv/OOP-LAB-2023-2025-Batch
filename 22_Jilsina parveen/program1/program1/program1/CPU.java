@@ -1,4 +1,4 @@
-package project1;
+package complexnumber;
 
 public class CPU {
 	double price ;
