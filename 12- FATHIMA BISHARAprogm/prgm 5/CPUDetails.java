@@ -1,4 +1,4 @@
-package project 1;
+package project1;
 import java.util.Scanner;
 class CPU {
 	double price;
