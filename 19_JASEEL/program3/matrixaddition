@@ -1,41 +1,62 @@
-package matrix;
-import java.util.Scanner;
-public class symmetric {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the no. of rows :");
-		int rows = sc.nextInt();
-		System.out.println("Enter the no. of columns :");
-		int cols = sc.nextInt();
-		int matrix[][] = new int[rows][cols];
-		System.out.println("Enter the element of the matrix");
-		for ( int i = 0; i<rows ;i++)
-			for ( int j = 0 ;j <cols ;j++)
-				matrix[i][j] = sc.nextInt();
-		sc.close();
-		System.out.println("THE given Matrix:");
-		for ( int i = 0;i < rows ; i++) {
-			for (int j = 0 ; j < cols ; j++ )
-				System.out.print(matrix[i][j] + "\t");
-			System.out.println() ;}
-		if (rows != cols)
-			System.out.println("The given matrix is not a square matrix.");
-		else {
-			boolean symmetric = true ;
-			for ( int i = 0 ; i < rows ; i++)
-				for (int j = 0 ; j < cols ; j++)
-				if (matrix[i][j] != matrix[j][i])
-				{
-					symmetric = false ; break ;
-				}
-			if(symmetric)
-				System.out.println("Then given matrix is symmetric.");
-			else
-				System.out.println("The given matrix is not symmetric.");
-				}
+package Matrix;
+import java.util.Scanner;
+
+public class Matrix 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter number of rows and columns for matrices:");
+		int rows=sc.nextInt();
+		int cols=sc.nextInt();
+		
+		//initialize matrices
+		int[][] matrix1=new int[rows][cols];
+		int[][] matrix2=new int[rows][cols];
+		
+		System.out.println("enter the elements to the first matrix:");
+		for (int i=0;i<rows;i++) 
+		{
+			for (int j=0;j<cols;j++) 
+			{
+				matrix1[i][j]=sc.nextInt();
+			}
+		}
+		
+//		second matrix
+		System.out.println("enter the elements to the second matrix:");
+		for (int i=0;i<rows;i++)
+		{
+			for (int j=0;j<cols;j++) 
+			{
+				matrix2[i][j]=sc.nextInt();
+			}
 		}
 
+
+		//matrix addition
+		int[][] resultmatrix=new int[rows][cols];
+		for (int i=0;i<rows;i++)
+		{
+			for (int j=0;j<cols;j++)
+			{
+				resultmatrix[i][j]=matrix1[i][j]+matrix2[i][j];
+			}
+	    }
+	
+		
+		//display matrix
+		System.out.println("result matrix:");
+		for (int i=0;i<rows;i++) 
+		{
+			for (int j=0;j<cols;j++) 
+			{
+				System.out.print(resultmatrix[i][j]+" ");
+			}
+			System.out.println();
+		}
+		sc.close();
+				
 	}
-
-
+}
