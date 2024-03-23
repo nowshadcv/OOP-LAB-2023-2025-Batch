@@ -1,4 +1,4 @@
-package package1;
+package complexnumberss;
 import java.util.Scanner;
 class CPU {
 	double price;
