@@ -2,7 +2,7 @@ package Overload;
 
 import java.util.Scanner;
 
-class Overload {
+class Method_overloading {
 	void area(float x)
 	{ System.out.println( "the area of sqr is: "+ Math.pow(x,2) +" sq units");}
 	void area(float x,float y)
