@@ -15,10 +15,13 @@ class m{
 		Overload O = new Overload();
 		Scanner sc = new Scanner (System.in);
 		Scanner ar = new Scanner (System.in);
+		while (true) {
+			  
 		System.out.println("choose option");
 		System.out.println("1.AREA of Square");
 		System.out.println("2.AREA of Rectangle");
 		System.out.println("3.AREA of Circle");
+		System.out.println("4.Exit");
 		
 		int choice;
 		float a,b;
@@ -38,8 +41,15 @@ class m{
 		case 3: System.out.println("Enter radius of circle");
 				c = ar.nextDouble();
 				O.area(c);
-			break;		
+				break;
+		case 4: System.out.println("Bye Bye!......");
+				System. exit(0);
+				break;
+		default:System.out.println("Wrong input");
+				break;	
 					}
+		}
+		
 //		O.area(5);
 //		O.area(11,12);
 //		O.area(2.5);
