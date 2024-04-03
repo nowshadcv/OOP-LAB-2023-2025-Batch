@@ -48,7 +48,7 @@ class TeacherArrObjects
 	int tid; String name; float salary; String address;
 	String department; String subject;
 	for (int i=0; i<n; i++){
-	System.out.println("Enter"+i+1 +"teacher details..");
+	System.out.println("Enter"+i +"teacher details..");
 	System.out.println ( "Enter teacher id (integer): "); 
 	tid= scT.nextInt();
 	System.out.println("Enter teacher name (String)");
