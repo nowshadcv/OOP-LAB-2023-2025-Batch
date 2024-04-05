@@ -1,4 +1,4 @@
-package pack1;
+package complexnum;
 import java.util.Scanner;
 
 	
