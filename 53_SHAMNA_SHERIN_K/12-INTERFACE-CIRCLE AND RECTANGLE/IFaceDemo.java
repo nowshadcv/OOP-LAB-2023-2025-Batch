@@ -113,18 +113,18 @@ public class IFaceDemo {
 				t.input();
 				t.area();
 				break;
-			case 6:
+			case 5:
 				System.out.print("Enter the radius of the circle\\n");
 				c.input();
 				c.perimeter();
 				break;
-			case 5:
+			case 6:
 				System.out.print("Enter the length and breadth of the rectangle\n");
 				r.input();
 				r.perimeter();
 				break;
 			case 7:
-				System.out.print("Enter the length of the square\\n");
+				System.out.print("Enter the length of the square\n");
 				s.input();
 				s.perimeter();
 				break;
