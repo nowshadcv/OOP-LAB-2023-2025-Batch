@@ -8,7 +8,7 @@ public class CPU {
 		String manufactorer;
 		double getcache() {
 			System.out.println("Enter processor cache:");
-			int p=m.nextInt();
+			Double p=m.nextDouble();
 			return p;
 			
 		}
@@ -19,7 +19,7 @@ public class CPU {
 		String manufactorer;
 		double getclockspeed() {
 			System.out.println("Enter clock speed:");
-			int c=m.nextInt();
+			Double c=m.nextDouble();
 			return c;
 		}
 	}
@@ -29,8 +29,10 @@ public class CPUDetails{
 		CPU cpu=new CPU();
 		CPU.Processor processor=cpu.new Processor();
 		CPU.RAM ram=new CPU.RAM();
-		System.out.println("Processor cache="+processor.getcache());
-		System.out.println("RAM clock speed="+ram.getclockspeed());
+		Double cache=processor.getcache();
+		Double speed=ram.getclockspeed();
+		System.out.println("Processor cache="+cache);
+		System.out.println("RAM clock speed="+speed);
 		
 	}
 		
