@@ -96,7 +96,7 @@ class Rectangle implements AP{
 		 Scanner sc = new Scanner(System.in);
 		 
 		 System.out.println("1: Area Of Circle");
-		 System.out.println("2: Area Of Perimeter");
+		 System.out.println("2: Area Of  Reactangle");
 		 System.out.println("3: Perimeter Of Circle");
 		 System.out.println("4: Perimeter Of Rectangle");
 		 System.out.println("5: Area Of Square");
