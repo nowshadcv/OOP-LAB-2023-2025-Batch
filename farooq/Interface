@@ -63,7 +63,7 @@ class Triangle implements AP{
 			c=t.nextInt();
 			perimeter =a+b+c;
 			System.out.println("Perimeter of triangle:" + perimeter); }}
-public class inferenc {
+public class interfac {
 	public static void main(String[] args) {
 		int ch;
 		Circle c =new Circle();
