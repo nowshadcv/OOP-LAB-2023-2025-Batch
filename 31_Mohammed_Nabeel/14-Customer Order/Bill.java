@@ -16,6 +16,11 @@ class ProductB implements BillGen{
 		total=quantity*unit_price;
 		return total;
 	}
+	@Override
+	public int catculate() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
 
 public class Bill {
@@ -54,7 +59,7 @@ public class Bill {
 			 Date date = java.util.Calendar.getInstance().getTime();
 			 System.out.println(date);
 			 System.out.println("--------------------------------------------------------------------");
-			 System.out.printf(" %5s %20s %10s %10s ","Prod_id" ,"Name","Quantity","Unit_Price","Total");
+			 System.out.printf(" %5s %17s %10s %10s ","Prod_id" ,"Name"," Quantity"," Unit_Price","Total");
 			 System.out.println();
 			 System.out.println("--------------------------------------------------------------------");
 			 for(int j =0 ; j<order[i].length;j++)
