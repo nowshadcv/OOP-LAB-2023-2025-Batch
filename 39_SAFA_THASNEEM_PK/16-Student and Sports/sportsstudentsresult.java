@@ -1,4 +1,4 @@
-package program;
+package package1;
 interface Student {
 	int score = 10;
 	void displayScore();
