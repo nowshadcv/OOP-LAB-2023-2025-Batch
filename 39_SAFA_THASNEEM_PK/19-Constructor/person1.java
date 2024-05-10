@@ -1,4 +1,4 @@
-package shabana;
+package project1;
 
 public class person1 {
 	    String name;
