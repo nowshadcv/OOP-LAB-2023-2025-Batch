@@ -1,43 +1,30 @@
-package inheritance_publisher;
+package pack1;
 
-class Publisher {
-        String publisher;
-        Publisher (String publi){
-             this.publisher=publi;}}
-class Book {
-    String name;
-    Publisher publisher;
-    Book() {}
-    public Book (String name,Publisher publisher) {
-    this.name = name;
-    this.publisher=publisher;}}
+interface Student {
+int score= 10;
+void displayScore();
+}
 
+interface Sports {
+	int score= 25;
+	void displaySportsScore();
+	}
 
-class Literature extends Book {
-    String Lit_type = "Literature" ;
-    Literature (String name, Publisher publisher) {
-        super (name  , publisher);}
-    void display() {
-    System.out.println("Name:" + super.name);
-    System.out.println("Type:" + this.Lit_type);
-    System.out.println("Publisher:" + this.publisher.publisher);}}
+class Result implements Student, Sports {
+	public void displayScore(){ 
+	System.out.println ("Academic Score is : "+Student.score);
+	}
+	public void displaySportsScore () {
+		System.out.println ("Sports Score is:"+Sports. score);
+	}
+}
 
 
-class Fiction extends Book {
-    String Lit_type = "Fiction";
-    Fiction (String name,Publisher publisher) {
-        super (name,publisher);}
-    void display() {
-    System.out.println ("Name:" + super.name);
-    System.out.println("Type:" + this.Lit_type); 
-    System.out.println ( "Publisher:" + this.publisher.publisher);}}
+public class SportsStudentResult {
+	 public static void main(String[] args){
+		Result r= new Result ();
+		r. displayScore(); 
+		r.displaySportsScore();
+}
 
-
-class InheritanceBook {
-    public static void main(String[] args){
-        Publisher lp =new Publisher ("S. Chand");
-        Literature l = new Literature ("As you like it", lp);
-        l. display();
-        Publisher fp =new Publisher("Tata McGraw Hill"); 
-        Fiction f = new Fiction ("Tempest", fp);
-        f. display ( ) ; }} 
+}
